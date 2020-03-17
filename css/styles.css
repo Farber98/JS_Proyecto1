@@ -1,0 +1,172 @@
+*{ /* Aspectos generales a todo el documento */
+    margin: 0px;
+    padding: 0px;
+    list-style: none;   /* Para no ver puntitos de li */
+}
+
+.clearfix{
+    float: none;
+    clear: both;    /* Limpiamos lo que se superpone. */
+}
+
+body{
+    background: url("../img/hojas.jpg"); /* Puedo cargar imagen en el background como referencia desde index.*/
+    background-attachment: fixed; /* Para que no se me acabe la imagen al scrollear. */
+}
+
+#global{    /* Creamos la gran caja global */
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;  /*Margen entre bordes*/
+    background:white;
+    box-shadow: 0px 0px 2px gray; /* Pequeña sombra */
+}
+
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;    /* Separacion entre letras */
+    background: #235E3D;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    float: left;       /* Para acomodarlo a la izquierda.*/
+    margin-bottom: 20px;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+
+#menu{
+    font-family: Helvetica, Arial;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;  /*Transormamos el texto a mayusc.*/
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block; /*Elementos uno al lado de otro*/
+    transition: all 300ms;
+}
+
+#menu ul li:hover{
+    background: #235E3D;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none; /*Saco subrayado azul*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post {
+    padding: 5px;
+}
+
+.post h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.post .fecha{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.post .more{
+    display:block;
+    padding: 10px;
+    background: #235E3D;
+    color:white;
+    text-decoration: none;
+    margin-top:10px;
+    width:70px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333; 
+    background: url(../img/lines.png) repeat-x; /* patron de lineas */
+}
+
+#sidebar h4 span{   /* Background blanco en las lineas*/
+    background: white;
+    padding: 5px;
+}
+
+#sidebar img{   /* Formateamos imagen de sidebar */
+    width:100%;
+}
+
+#sidebar p{
+    font-size 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor:pointer;
+}
+
+footer {
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(51,51,51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding:left 20px;
+    padding: right 20px;
+    margin-top: 50px;
+    line-height: 47px;
+    text-align: center;
+}

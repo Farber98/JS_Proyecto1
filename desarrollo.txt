@@ -1,0 +1,22 @@
+1) Identificamos los elementos de la estructura html presentes en el enunciado (Arriba abajo, izquierda derecha):
+- Header
+- Navbar
+- Menu
+- Slider de imagenes
+- Articulos
+- Sidebar
+- Footer
+
+2) Escribimos la estructura HTML basica de los elementos listados anteriormente, todos dentro de la seccion global salvo el footer.
+
+3) Realizamos las maquetaciones en styles.css
+
+	i) Cargamos imagen de fondo y maquetamos caja Global
+	
+	ii) Maquetamos el Header. Colocamos logo y limpiamos los flotantes con clearfix
+
+	iii) Maquetamos la barra de navegacion y le ponemos su hover.
+
+	iv) Maquetamos los articulos y creamos el boton de leer mas.
+
+	v) Maquetamos sidebar(con imagen)  y footer. 

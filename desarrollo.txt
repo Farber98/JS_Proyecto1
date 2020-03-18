@@ -1,4 +1,4 @@
-1) Identificamos los elementos de la estructura html presentes en el enunciado (Arriba abajo, izquierda derecha):
+1°) Identificamos los elementos de la estructura html presentes en el enunciado (Arriba abajo, izquierda derecha):
 - Header
 - Navbar
 - Menu
@@ -7,9 +7,9 @@
 - Sidebar
 - Footer
 
-2) Escribimos la estructura HTML basica de los elementos listados anteriormente, todos dentro de la seccion global salvo el footer.
+2°) Escribimos la estructura HTML basica de los elementos listados anteriormente, todos dentro de la seccion global salvo el footer.
 
-3) Realizamos las maquetaciones en styles.css
+3°) Realizamos las maquetaciones en styles.css
 
 	i) Cargamos imagen de fondo y maquetamos caja Global
 	
@@ -19,4 +19,26 @@
 
 	iv) Maquetamos los articulos y creamos el boton de leer mas.
 
-	v) Maquetamos sidebar(con imagen)  y footer. 
+	v) Maquetamos sidebar(con imagen)  
+
+	vi) Maquetamos falso formulario de ingreso.
+
+	vii) Maquetamos el footer.
+
+4°) Creamos el Slider/Galeria de imagenes. Buscamos el plugin bxslider y lo importamos
+
+5°) Realizamos el listado dinamico de articulos desde JS
+
+6°) Realizamos el selector de temas.
+
+7°) Realizamos el scroll animado y suavizado hacia arriba.
+
+8°) Guardamos informacion de Login en el LocalStorage. En caso de que exista esa info, la mostramos.
+
+9°) Coloco acordeon en la pestaña sobre mi.
+
+10°) Hacemos un reloj dinamico que se actualiza cada segundo con moment js.
+
+11°) Desarrollamos un formulario con validacion mediante jQuery validator y personalizamos su mensaje de error.
+
+

@@ -8,19 +8,18 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link id="theme" rel="stylesheet" type="text/css" href="css/green.css"> <!-- Por defecto el tema verde. -->
     
-    <!-- Cargamos slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- Cargamos jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   
-    <!-- Moment JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.slider').bxSlider();
-      });
-    </script>
+
+    <!-- Cargamos jQuery UI -->
+       <!-- Incluimos estilos css de jQuery UI  -->
+       <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+       <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+       <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+   
+       <!-- Inclumios los metodos JS de jQuery UI -->
+       <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
     <!-- Cargamos el archivo de JS. -->
     <script type="text/Javascript" src="js/main.js"></script>
@@ -50,27 +49,39 @@
             <nav  id="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="reloj.html">Reloj</a></li>
                     <li><a href="about.html">Sobre mi</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- SLIDER -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/cielo.jpg" title="Cielo"></div>
-                <div><img src="img/rojo.jpg" title="Caracol"></div>
-                <div><img src="img/hojas.jpg" title="Hojas"></div>
-            </div>
-        </div>
-
-
 
         <!-- CONTENIDO: Articulos se cargan desde JS. -->
         <section id="contenido">
-            <div id="posts"></div>
+            <div id="box">
+                <!-- Cargar acordeon -->
+            <h2>Sobre nosotros</h2>
+                <div id="acordeon">
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nam reiciendis perspiciatis impedit numquam ad quisquam eum beatae veniam voluptatum.</p>
+                    </div>
+
+                    <h3>Contacto</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nam reiciendis perspiciatis impedit numquam ad quisquam eum beatae veniam voluptatum.</p>
+                    </div>
+
+                    <h3>Contacto</h3>
+                    <div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nam reiciendis perspiciatis impedit numquam ad quisquam eum beatae veniam voluptatum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+                
 
         <!-- SIDEBAR -->
 

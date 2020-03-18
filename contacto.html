@@ -8,19 +8,20 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link id="theme" rel="stylesheet" type="text/css" href="css/green.css"> <!-- Por defecto el tema verde. -->
     
-    <!-- Cargamos slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- Cargamos jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Cargamos jQuery UI -->
+       <!-- Incluimos estilos css de jQuery UI  -->
+       <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+       <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+       <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+   
+       <!-- Inclumios los metodos JS de jQuery UI -->
+       <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
   
-    <!-- Moment JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.slider').bxSlider();
-      });
-    </script>
+    <!-- Cargamos jQuery form validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
 
     <!-- Cargamos el archivo de JS. -->
     <script type="text/Javascript" src="js/main.js"></script>
@@ -50,27 +51,47 @@
             <nav  id="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="reloj.html">Reloj</a></li>
                     <li><a href="about.html">Sobre mi</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- SLIDER -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/cielo.jpg" title="Cielo"></div>
-                <div><img src="img/rojo.jpg" title="Caracol"></div>
-                <div><img src="img/hojas.jpg" title="Hojas"></div>
-            </div>
-        </div>
-
-
 
         <!-- CONTENIDO: Articulos se cargan desde JS. -->
         <section id="contenido">
-            <div id="posts"></div>
+            <div id="box">
+                <h2>Contacto</h2>
+                <form action="" method="post" id="contacto">
+
+                    <label for="nombres">Nombres</label>
+                    <input data-validation="alphanumeric required" type="text" name="nombre">
+
+                    <label for="apellidos">Apellidos</label>
+                    <input data-validation="alphanumeric required" type="text" name="apellido">
+
+                    <label for="edad">Edad</label>
+                    <input data-validation="number required" type="number" name="edad">
+
+                    <label for="sexo">Sexo</label>
+                    <select data-validation="required" name="sexo">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input data-validation="date required" data-validation-format="dd/mm/yyyy" type="text" name="fecha">
+
+                    <label for="email">Email</label>
+                    <input data-validation="email required" type="email" name="email">
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+            </div>
+
+                
 
         <!-- SIDEBAR -->
 

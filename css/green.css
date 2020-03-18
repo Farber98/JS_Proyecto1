@@ -1,0 +1,17 @@
+body{
+    background: url("../img/hojas.jpg"); /* Puedo cargar imagen en el background como referencia desde index.*/
+    background-attachment: fixed; /* Para que no se me acabe la imagen al scrollear. */
+}
+
+#logo{
+    background: #235E3D;
+}
+
+#menu ul li:hover{
+    background: #235E3D;
+}
+
+.post .more{
+    background: #235E3D;
+}
+
